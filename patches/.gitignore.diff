@@ -1,0 +1,16 @@
+diff --git a/.gitignore b/.gitignore
+index 505d52c25..e89e56655 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -19,4 +19,8 @@ edu/dependencies/.gradle
+ edu/dependencies/build
+ native/**/build/
+ stale_outputs_checked
+-/android
+\ No newline at end of file
++/android
++
++.idea/discord.xml
++.idea/checkstyle-idea.xml
++.idea/git_toolbox_blame.xml
+\ No newline at end of file

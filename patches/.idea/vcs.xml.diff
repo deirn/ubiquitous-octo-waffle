@@ -1,0 +1,13 @@
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+index ac254a0bf..12251cd16 100644
+--- a/.idea/vcs.xml
++++ b/.idea/vcs.xml
+@@ -51,6 +51,5 @@
+   </component>
+   <component name="VcsDirectoryMappings">
+     <mapping directory="" vcs="Git" />
+-    <mapping directory="$PROJECT_DIR$/android" vcs="Git" />
+   </component>
+-</project>
++</project>
+\ No newline at end of file
