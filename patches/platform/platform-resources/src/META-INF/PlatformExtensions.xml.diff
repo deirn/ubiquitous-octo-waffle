@@ -1,0 +1,15 @@
+diff --git a/platform/platform-resources/src/META-INF/PlatformExtensions.xml b/platform/platform-resources/src/META-INF/PlatformExtensions.xml
+index 0e8cb4440..0f59262d0 100644
+--- a/platform/platform-resources/src/META-INF/PlatformExtensions.xml
++++ b/platform/platform-resources/src/META-INF/PlatformExtensions.xml
+@@ -564,8 +564,10 @@
+ 
+     <applicationService serviceInterface="com.intellij.diagnostic.EventWatcher"
+                         serviceImplementation="com.intellij.diagnostic.EventWatcherService" headlessImplementation=""/>
++    <!-- GIT
+     <toolWindow id="Events Watcher" anchor="bottom" canCloseContents="false" doNotActivateOnStart="true"
+                 factoryClass="com.intellij.diagnostic.ui.EventWatcherToolWindowFactory"/>
++    -->
+ 
+     <applicationService serviceInterface="com.intellij.openapi.fileEditor.FileNavigator"
+                         serviceImplementation="com.intellij.openapi.fileEditor.FileNavigatorImpl"/>

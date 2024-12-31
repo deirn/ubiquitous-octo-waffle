@@ -1,0 +1,15 @@
+diff --git a/platform/statistics/devkit/resources/intellij.platform.statistics.devkit.xml b/platform/statistics/devkit/resources/intellij.platform.statistics.devkit.xml
+index 1ec8412ee..6938b7293 100644
+--- a/platform/statistics/devkit/resources/intellij.platform.statistics.devkit.xml
++++ b/platform/statistics/devkit/resources/intellij.platform.statistics.devkit.xml
+@@ -32,8 +32,10 @@
+             class="com.intellij.internal.statistic.devkit.actions.TestParseEventsSchemeAction"/>
+   </actions>
+   <extensions defaultExtensionNs="com.intellij">
++    <!-- GIT
+     <toolWindow id="Statistics Event Log" factoryClass="com.intellij.internal.statistic.devkit.toolwindow.StatisticsEventLogToolWindowFactory"
+                 anchor="bottom" canCloseContents="true" order="last"/>
++    -->
+     <notificationGroup displayType="BALLOON" id="FeatureUsageStatistics" bundle="messages.StatisticsBundle" key="stats.feature.usage.statistics"/>
+     <completion.contributor language="JSON"
+                             implementationClass="com.intellij.internal.statistic.devkit.actions.scheme.ValidationRulesCompletionContributor"/>

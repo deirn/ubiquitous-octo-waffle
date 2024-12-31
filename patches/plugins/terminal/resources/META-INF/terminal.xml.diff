@@ -1,0 +1,16 @@
+diff --git a/plugins/terminal/resources/META-INF/terminal.xml b/plugins/terminal/resources/META-INF/terminal.xml
+index a601810c7..3a7a5c288 100644
+--- a/plugins/terminal/resources/META-INF/terminal.xml
++++ b/plugins/terminal/resources/META-INF/terminal.xml
+@@ -1,9 +1,11 @@
+ <idea-plugin>
+   <extensions defaultExtensionNs="com.intellij">
++    <!-- GIT
+     <toolWindow id="Terminal" anchor="bottom" icon="org.jetbrains.plugins.terminal.TerminalIcons.OpenTerminal_13x13"
+                 factoryClass="org.jetbrains.plugins.terminal.TerminalToolWindowFactory"
+                 secondary="false"
+                 canCloseContents="true"/>
++    -->
+     <applicationService serviceImplementation="org.jetbrains.plugins.terminal.DefaultTerminalRunnerFactory"/>
+ 
+     <projectConfigurable groupId="tools"

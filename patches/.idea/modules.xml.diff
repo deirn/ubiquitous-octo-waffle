@@ -1,5 +1,5 @@
 diff --git a/.idea/modules.xml b/.idea/modules.xml
-index a05ee8883..f29e0900f 100644
+index a05ee8883..b8a705c41 100644
 --- a/.idea/modules.xml
 +++ b/.idea/modules.xml
 @@ -14,6 +14,7 @@
@@ -262,7 +262,14 @@ index a05ee8883..f29e0900f 100644
        <module fileurl="file://$PROJECT_DIR$/platform/lvcs-api/intellij.platform.lvcs.iml" filepath="$PROJECT_DIR$/platform/lvcs-api/intellij.platform.lvcs.iml" />
        <module fileurl="file://$PROJECT_DIR$/platform/lvcs-impl/intellij.platform.lvcs.impl.iml" filepath="$PROJECT_DIR$/platform/lvcs-impl/intellij.platform.lvcs.impl.iml" />
        <module fileurl="file://$PROJECT_DIR$/platform/macro/intellij.platform.macro.iml" filepath="$PROJECT_DIR$/platform/macro/intellij.platform.macro.iml" />
-@@ -802,7 +856,9 @@
+@@ -797,12 +851,16 @@
+       <module fileurl="file://$PROJECT_DIR$/platform/platform-tests/intellij.platform.tests.iml" filepath="$PROJECT_DIR$/platform/platform-tests/intellij.platform.tests.iml" />
+       <module fileurl="file://$PROJECT_DIR$/platform/threadDumpParser/intellij.platform.threadDumpParser.iml" filepath="$PROJECT_DIR$/platform/threadDumpParser/intellij.platform.threadDumpParser.iml" />
+       <module fileurl="file://$PROJECT_DIR$/platform/tips-of-the-day/intellij.platform.tips.iml" filepath="$PROJECT_DIR$/platform/tips-of-the-day/intellij.platform.tips.iml" />
++      <!-- GIT
+       <module fileurl="file://$PROJECT_DIR$/platform/tracing-ide/intellij.platform.tracing.ide.iml" filepath="$PROJECT_DIR$/platform/tracing-ide/intellij.platform.tracing.ide.iml" />
++      -->
+       <module fileurl="file://$PROJECT_DIR$/platform/tracing/intellij.platform.tracing.rt.iml" filepath="$PROJECT_DIR$/platform/tracing/intellij.platform.tracing.rt.iml" />
        <module fileurl="file://$PROJECT_DIR$/uast/uast-common/intellij.platform.uast.iml" filepath="$PROJECT_DIR$/uast/uast-common/intellij.platform.uast.iml" />
        <module fileurl="file://$PROJECT_DIR$/uast/uast-common-ide/intellij.platform.uast.ide.iml" filepath="$PROJECT_DIR$/uast/uast-common-ide/intellij.platform.uast.ide.iml" />
        <module fileurl="file://$PROJECT_DIR$/uast/testFramework/intellij.platform.uast.testFramework.iml" filepath="$PROJECT_DIR$/uast/testFramework/intellij.platform.uast.testFramework.iml" />
@@ -272,7 +279,7 @@ index a05ee8883..f29e0900f 100644
        <module fileurl="file://$PROJECT_DIR$/platform/ui.jcef/intellij.platform.ui.jcef.iml" filepath="$PROJECT_DIR$/platform/ui.jcef/intellij.platform.ui.jcef.iml" />
        <module fileurl="file://$PROJECT_DIR$/platform/usageView/intellij.platform.usageView.iml" filepath="$PROJECT_DIR$/platform/usageView/intellij.platform.usageView.iml" />
        <module fileurl="file://$PROJECT_DIR$/platform/usageView-impl/intellij.platform.usageView.impl.iml" filepath="$PROJECT_DIR$/platform/usageView-impl/intellij.platform.usageView.impl.iml" />
-@@ -851,6 +907,7 @@
+@@ -851,6 +909,7 @@
        <module fileurl="file://$PROJECT_DIR$/platform/workspace/storage/testEntities/intellij.platform.workspace.storage.testEntities.iml" filepath="$PROJECT_DIR$/platform/workspace/storage/testEntities/intellij.platform.workspace.storage.testEntities.iml" />
        <module fileurl="file://$PROJECT_DIR$/platform/workspace/storage/tests/intellij.platform.workspace.storage.tests.iml" filepath="$PROJECT_DIR$/platform/workspace/storage/tests/intellij.platform.workspace.storage.tests.iml" />
        <module fileurl="file://$PROJECT_DIR$/platform/wsl-impl/intellij.platform.wsl.impl.iml" filepath="$PROJECT_DIR$/platform/wsl-impl/intellij.platform.wsl.impl.iml" />
@@ -280,7 +287,7 @@ index a05ee8883..f29e0900f 100644
        <module fileurl="file://$PROJECT_DIR$/plugins/properties/intellij.properties.iml" filepath="$PROJECT_DIR$/plugins/properties/intellij.properties.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/properties/properties-psi-api/intellij.properties.psi.iml" filepath="$PROJECT_DIR$/plugins/properties/properties-psi-api/intellij.properties.psi.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/properties/properties-psi-impl/intellij.properties.psi.impl.iml" filepath="$PROJECT_DIR$/plugins/properties/properties-psi-impl/intellij.properties.psi.impl.iml" />
-@@ -897,10 +954,14 @@
+@@ -897,10 +956,14 @@
        <module fileurl="file://$PROJECT_DIR$/python/python-syntax-core/intellij.python.syntax.core.iml" filepath="$PROJECT_DIR$/python/python-syntax-core/intellij.python.syntax.core.iml" />
        <module fileurl="file://$PROJECT_DIR$/python/python-terminal/intellij.python.terminal.iml" filepath="$PROJECT_DIR$/python/python-terminal/intellij.python.terminal.iml" />
        <module fileurl="file://$PROJECT_DIR$/python/tools/intellij.python.tools.iml" filepath="$PROJECT_DIR$/python/tools/intellij.python.tools.iml" />
@@ -295,7 +302,7 @@ index a05ee8883..f29e0900f 100644
        <module fileurl="file://$PROJECT_DIR$/plugins/repository-search/intellij.repository.search.iml" filepath="$PROJECT_DIR$/plugins/repository-search/intellij.repository.search.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/restructuredtext/intellij.restructuredtext.iml" filepath="$PROJECT_DIR$/plugins/restructuredtext/intellij.restructuredtext.iml" />
        <module fileurl="file://$PROJECT_DIR$/python/python-restructuredtext/intellij.restructuredtext.python.iml" filepath="$PROJECT_DIR$/python/python-restructuredtext/intellij.restructuredtext.python.iml" />
-@@ -916,17 +977,25 @@
+@@ -916,17 +979,25 @@
        <module fileurl="file://$PROJECT_DIR$/plugins/settings-repository/intellij.settingsRepository.tests.iml" filepath="$PROJECT_DIR$/plugins/settings-repository/intellij.settingsRepository.tests.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/settings-sync/intellij.settingsSync.iml" filepath="$PROJECT_DIR$/plugins/settings-sync/intellij.settingsSync.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/settings-sync/git/intellij.settingsSync.git.iml" filepath="$PROJECT_DIR$/plugins/settings-sync/git/intellij.settingsSync.git.iml" />
@@ -321,7 +328,7 @@ index a05ee8883..f29e0900f 100644
        <module fileurl="file://$PROJECT_DIR$/plugins/stats-collector/intellij.statsCollector.iml" filepath="$PROJECT_DIR$/plugins/stats-collector/intellij.statsCollector.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/stats-collector/intellij.statsCollector.tests.iml" filepath="$PROJECT_DIR$/plugins/stats-collector/intellij.statsCollector.tests.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/tasks/tasks-api/intellij.tasks.iml" filepath="$PROJECT_DIR$/plugins/tasks/tasks-api/intellij.tasks.iml" />
-@@ -935,19 +1004,24 @@
+@@ -935,19 +1006,24 @@
        <module fileurl="file://$PROJECT_DIR$/plugins/tasks/tasks-java/intellij.tasks.java.iml" filepath="$PROJECT_DIR$/plugins/tasks/tasks-java/intellij.tasks.java.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/tasks/tasks-core/jira/intellij.tasks.jira.iml" filepath="$PROJECT_DIR$/plugins/tasks/tasks-core/jira/intellij.tasks.jira.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/tasks/tasks-tests/intellij.tasks.tests.iml" filepath="$PROJECT_DIR$/plugins/tasks/tasks-tests/intellij.tasks.tests.iml" />
@@ -346,7 +353,7 @@ index a05ee8883..f29e0900f 100644
        <module fileurl="file://$PROJECT_DIR$/tools/apiDump/intellij.tools.apiDump.iml" filepath="$PROJECT_DIR$/tools/apiDump/intellij.tools.apiDump.iml" />
        <module fileurl="file://$PROJECT_DIR$/tools/apiDump/testData/intellij.tools.apiDump.testData.iml" filepath="$PROJECT_DIR$/tools/apiDump/testData/intellij.tools.apiDump.testData.iml" />
        <module fileurl="file://$PROJECT_DIR$/tools/devLauncher/intellij.tools.devLauncher.iml" filepath="$PROJECT_DIR$/tools/devLauncher/intellij.tools.devLauncher.iml" />
-@@ -963,19 +1037,23 @@
+@@ -963,19 +1039,23 @@
        <module fileurl="file://$PROJECT_DIR$/tools/reproducibleBuilds.diff/intellij.tools.reproducibleBuilds.diff.iml" filepath="$PROJECT_DIR$/tools/reproducibleBuilds.diff/intellij.tools.reproducibleBuilds.diff.iml" />
        <module fileurl="file://$PROJECT_DIR$/platform/testFramework/bootstrap/intellij.tools.testsBootstrap.iml" filepath="$PROJECT_DIR$/platform/testFramework/bootstrap/intellij.tools.testsBootstrap.iml" />
        <module fileurl="file://$PROJECT_DIR$/updater/intellij.tools.updater.iml" filepath="$PROJECT_DIR$/updater/intellij.tools.updater.iml" />
@@ -370,7 +377,7 @@ index a05ee8883..f29e0900f 100644
        <module fileurl="file://$PROJECT_DIR$/plugins/hg4idea/intellij.vcs.hg.iml" filepath="$PROJECT_DIR$/plugins/hg4idea/intellij.vcs.hg.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/svn4idea/intellij.vcs.svn.iml" filepath="$PROJECT_DIR$/plugins/svn4idea/intellij.vcs.svn.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/svn4idea/intellij.vcs.svn.tests.iml" filepath="$PROJECT_DIR$/plugins/svn4idea/intellij.vcs.svn.tests.iml" />
-@@ -988,13 +1066,16 @@
+@@ -988,13 +1068,16 @@
        <module fileurl="file://$PROJECT_DIR$/xml/dom-tests/intellij.xml.dom.tests.iml" filepath="$PROJECT_DIR$/xml/dom-tests/intellij.xml.dom.tests.iml" />
        <module fileurl="file://$PROJECT_DIR$/xml/xml-frontback/intellij.xml.frontback.iml" filepath="$PROJECT_DIR$/xml/xml-frontback/intellij.xml.frontback.iml" />
        <module fileurl="file://$PROJECT_DIR$/xml/impl/intellij.xml.impl.iml" filepath="$PROJECT_DIR$/xml/impl/intellij.xml.impl.iml" />
@@ -387,7 +394,7 @@ index a05ee8883..f29e0900f 100644
        <module fileurl="file://$PROJECT_DIR$/plugins/xpath/intellij.xpath.iml" filepath="$PROJECT_DIR$/plugins/xpath/intellij.xpath.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/xpath/xslt-rt/intellij.xpath.rt.iml" filepath="$PROJECT_DIR$/plugins/xpath/xslt-rt/intellij.xpath.rt.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/xslt-debugger/intellij.xslt.debugger.iml" filepath="$PROJECT_DIR$/plugins/xslt-debugger/intellij.xslt.debugger.iml" />
-@@ -1002,6 +1083,8 @@
+@@ -1002,6 +1085,8 @@
        <module fileurl="file://$PROJECT_DIR$/plugins/xslt-debugger/engine/intellij.xslt.debugger.rt.iml" filepath="$PROJECT_DIR$/plugins/xslt-debugger/engine/intellij.xslt.debugger.rt.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/yaml/intellij.yaml.iml" filepath="$PROJECT_DIR$/plugins/yaml/intellij.yaml.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/yaml/editing/intellij.yaml.editing.iml" filepath="$PROJECT_DIR$/plugins/yaml/editing/intellij.yaml.editing.iml" />
@@ -396,7 +403,7 @@ index a05ee8883..f29e0900f 100644
        <module fileurl="file://$PROJECT_DIR$/plugins/kotlin/all-tests/kotlin.all-tests.iml" filepath="$PROJECT_DIR$/plugins/kotlin/all-tests/kotlin.all-tests.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/kotlin/base/analysis/kotlin.base.analysis.iml" filepath="$PROJECT_DIR$/plugins/kotlin/base/analysis/kotlin.base.analysis.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/kotlin/base/analysis-api-platform/kotlin.base.analysis-api-platform.iml" filepath="$PROJECT_DIR$/plugins/kotlin/base/analysis-api-platform/kotlin.base.analysis-api-platform.iml" />
-@@ -1265,6 +1348,7 @@
+@@ -1265,6 +1350,7 @@
        <module fileurl="file://$PROJECT_DIR$/plugins/kotlin/util/test-generator-api/kotlin.util.test-generator-api.iml" filepath="$PROJECT_DIR$/plugins/kotlin/util/test-generator-api/kotlin.util.test-generator-api.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/kotlin/util/test-generator-fe10/kotlin.util.test-generator-fe10.iml" filepath="$PROJECT_DIR$/plugins/kotlin/util/test-generator-fe10/kotlin.util.test-generator-fe10.iml" />
        <module fileurl="file://$PROJECT_DIR$/plugins/kotlin/util/test-generator-fir/kotlin.util.test-generator-fir.iml" filepath="$PROJECT_DIR$/plugins/kotlin/util/test-generator-fir/kotlin.util.test-generator-fir.iml" />

@@ -1,0 +1,18 @@
+diff --git a/plugins/ide-features-trainer/res/META-INF/plugin.xml b/plugins/ide-features-trainer/res/META-INF/plugin.xml
+index 0da2f2950..ad9cd9037 100644
+--- a/plugins/ide-features-trainer/res/META-INF/plugin.xml
++++ b/plugins/ide-features-trainer/res/META-INF/plugin.xml
+@@ -72,11 +72,13 @@
+ 
+     <applicationService serviceImplementation="training.lang.LangManager"/>
+     <applicationService serviceImplementation="training.learn.lesson.LessonStateBase"/>
++    <!-- GIT
+     <toolWindow id="Learn"
+                 canCloseContents="true"
+                 icon="training.FeaturesTrainerIcons.FeatureTrainerToolWindow"
+                 factoryClass="training.ui.LearnToolWindowFactory"
+     />
++    -->
+ 
+     <applicationConfigurable groupId="tools" bundle="messages.LearnBundle" key="learn.options.panel.name" id="FeaturesTrainerSettingsPanel"
+                              instance="training.ui.FeaturesTrainerSettingsPanel"/>

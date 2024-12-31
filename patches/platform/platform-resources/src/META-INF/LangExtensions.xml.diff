@@ -1,0 +1,53 @@
+diff --git a/platform/platform-resources/src/META-INF/LangExtensions.xml b/platform/platform-resources/src/META-INF/LangExtensions.xml
+index da44c7e59..1dca1e61c 100644
+--- a/platform/platform-resources/src/META-INF/LangExtensions.xml
++++ b/platform/platform-resources/src/META-INF/LangExtensions.xml
+@@ -392,7 +392,9 @@
+                     serviceImplementation="com.intellij.find.impl.FindManagerImpl"/>
+ 
+     <projectService serviceImplementation="com.intellij.ide.hierarchy.HierarchyBrowserManager" client="all"/>
++    <!-- GIT
+     <toolWindowExtractorMode id="Hierarchy" mode="per_client"/>
++    -->
+ 
+     <projectService serviceImplementation="com.intellij.codeInsight.documentation.DocumentationManager"/>
+ 
+@@ -1061,6 +1063,7 @@
+ 
+     <http.fileEditorActionProvider implementation="com.intellij.openapi.fileEditor.impl.http.LangRemoteFileEditorActionProvider"/>
+ 
++    <!-- GIT
+     <toolWindow id="Project" anchor="left" icon="AllIcons.Toolwindows.ToolWindowProject"
+                 factoryClass="com.intellij.ide.projectView.impl.ProjectViewToolWindowFactory"/>
+ 
+@@ -1069,6 +1072,7 @@
+     <toolWindow id="Bookmarks" anchor="left" icon="AllIcons.Toolwindows.ToolWindowBookmarks" secondary="true"
+                 factoryClass="com.intellij.ide.bookmark.ui.BookmarksViewFactory" order="after Structure"/>
+     <toolWindowExtractorMode id="Bookmarks" mode="per_client"/>
++    -->
+ 
+ 
+     <postStartupActivity implementation="com.intellij.ide.bookmark.BookmarksStartupActivity"/>
+@@ -1076,9 +1080,11 @@
+     <selectInTarget implementation="com.intellij.ide.bookmark.ui.BookmarksSelectInTarget"/>
+     <actionPromoter implementation="com.intellij.ide.bookmark.actions.NodeMoveActionPromoter"/>
+ 
++    <!-- GIT
+     <toolWindow id="TODO" anchor="bottom" icon="AllIcons.Toolwindows.ToolWindowTodo"
+                 factoryClass="com.intellij.ide.todo.TodoToolWindowFactory" canCloseContents="true"/>
+     <toolWindowExtractorMode id="TODO" mode="per_client"/>
++    -->
+     <projectService serviceImplementation="com.intellij.ide.todo.TodoViewChangesSupport"/>
+ 
+     <psi.fileReferenceHelper implementation="com.intellij.psi.impl.source.resolve.reference.impl.providers.PsiFileReferenceHelper"/>
+@@ -1659,8 +1665,10 @@
+     <projectService serviceInterface="com.intellij.codeInsight.daemon.impl.HectorComponentFactory"
+                     serviceImplementation="com.intellij.codeInsight.daemon.impl.HectorComponentFactoryImpl"/>
+ 
++    <!--GIT
+     <toolWindow id="Problems View" anchor="bottom" icon="AllIcons.Toolwindows.ToolWindowProblemsEmpty" canCloseContents="true"
+                 factoryClass="com.intellij.analysis.problemsView.toolWindow.ProblemsView"/>
++    -->
+     <notificationGroup id="Automatic Module Unloading" displayType="BALLOON" bundle="messages.ProjectBundle"
+                        key="notification.group.automatic.module.unloading"/>
+     <notificationGroup id="Execution" displayType="TOOL_WINDOW" bundle="messages.ExecutionBundle" key="notification.group.execution"/>
