@@ -1,0 +1,14 @@
+diff --git a/community-resources/resources/idea/IdeaApplicationInfo.xml b/community-resources/resources/idea/IdeaApplicationInfo.xml
+index 6825ddadb..74468f6a8 100644
+--- a/community-resources/resources/idea/IdeaApplicationInfo.xml
++++ b/community-resources/resources/idea/IdeaApplicationInfo.xml
+@@ -7,7 +7,9 @@
+   <icon-eap svg="/idea-ce-eap.svg" svg-small="/idea-ce-eap_16.svg"/>
+   <names product="IDEA" fullname="IntelliJ IDEA" edition="Community Edition" script="idea" motto="Capable and Ergonomic IDE for JVM"/>
+ 
++  <!-- GIT
+   <essential-plugin>com.intellij.java</essential-plugin>
+   <essential-plugin>com.intellij.java.ide</essential-plugin>
+   <essential-plugin>com.intellij.modules.json</essential-plugin>
++  -->
+ </component>

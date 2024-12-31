@@ -1,0 +1,12 @@
+diff --git a/java/compiler/impl/intellij.java.compiler.impl.iml b/java/compiler/impl/intellij.java.compiler.impl.iml
+index f4129eb73..a5156d337 100644
+--- a/java/compiler/impl/intellij.java.compiler.impl.iml
++++ b/java/compiler/impl/intellij.java.compiler.impl.iml
+@@ -55,6 +55,7 @@
+     <orderEntry type="library" name="opentelemetry-semconv" level="project" />
+     <orderEntry type="library" name="kotlinx-collections-immutable" level="project" />
+     <orderEntry type="library" name="netty-codec-protobuf" level="project" />
++    <orderEntry type="module" module-name="intellij.platform.execution.impl" /> <!-- GIT -->
+   </component>
+   <component name="copyright">
+     <Base>

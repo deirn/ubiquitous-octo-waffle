@@ -1,0 +1,4 @@
+diff --git a/java/java-impl/src/com/intellij/copyright/UpdateJavaFileCopyright.java b/java/java-impl/src/com/intellij/copyright/UpdateJavaFileCopyright.java.excluded
+similarity index 100%
+rename from java/java-impl/src/com/intellij/copyright/UpdateJavaFileCopyright.java
+rename to java/java-impl/src/com/intellij/copyright/UpdateJavaFileCopyright.java.excluded

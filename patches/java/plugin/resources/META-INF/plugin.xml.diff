@@ -1,0 +1,13 @@
+diff --git a/java/plugin/resources/META-INF/plugin.xml b/java/plugin/resources/META-INF/plugin.xml
+index e2b2449dd..4f40805ba 100644
+--- a/java/plugin/resources/META-INF/plugin.xml
++++ b/java/plugin/resources/META-INF/plugin.xml
+@@ -16,7 +16,7 @@
+     <plugin id="com.intellij.modules.java-capable"/>
+   </dependencies>
+ 
+-  <depends optional="true" config-file="java-copyright.xml">com.intellij.copyright</depends>
++  <depends optional="true" config-file="java-copyright.xml.excluded">com.intellij.copyright</depends>
+ 
+   <xi:include href="/META-INF/JavaPlugin.xml"/>
+ 

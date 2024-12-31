@@ -1,0 +1,13 @@
+diff --git a/community-resources/resources/META-INF/IdeaPlugin.xml b/community-resources/resources/META-INF/IdeaPlugin.xml
+index ab05cf067..02f73c122 100644
+--- a/community-resources/resources/META-INF/IdeaPlugin.xml
++++ b/community-resources/resources/META-INF/IdeaPlugin.xml
+@@ -1,5 +1,8 @@
+ <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
++  <!-- GIT
+   <xi:include href="/META-INF/JavaIdePlugin.xml"/>
++  -->
++  <xi:include href="/META-INF/PlatformLangPlugin.xml"/> <!-- GIT -->
+   <xi:include href="/META-INF/tips-intellij-idea-community.xml"/>
+ 
+   <module value="com.intellij.modules.idea"/>

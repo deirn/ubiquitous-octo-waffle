@@ -1,0 +1,4 @@
+diff --git a/java/plugin/resources/META-INF/java-copyright.xml b/java/plugin/resources/META-INF/java-copyright.xml.excluded
+similarity index 100%
+rename from java/plugin/resources/META-INF/java-copyright.xml
+rename to java/plugin/resources/META-INF/java-copyright.xml.excluded

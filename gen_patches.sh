@@ -32,20 +32,38 @@ fi
         git commit -m "APPLY PATCH"
     fi
 
-    git reset --mixed HEAD~1
+    git reset --soft HEAD~1
 
     rm -rf "$patches_dir"
 
-    changed_files="$(git diff -B -M -C --name-only)"
+    git diff HEAD --name-status | while read -r status file other_file; do
+        case $status in
+            # Deleted
+            D*) 
+                out_file="$(basename "${file}").diff"
+                out="${patches_dir}/${out_file}"
+                out_dir="$(dirname "$out")"
+                out="${out_dir}/__${out_file}"
+                mkdir -p "$out_dir"
+                git diff HEAD -- "$file" > "$out"
+                ;;
 
-    IFS=$'\n'
-
-    for file in $changed_files; do
-        out="${patches_dir}/${file}.diff"
-        out_dir="$(dirname "$out")"
-        
-        mkdir -p "$out_dir"
-        git diff -B -M -C "$file" > "$out"
+            # Renamed/Copied
+            [RC]*) 
+                out="${patches_dir}/${other_file}.diff"
+                out_dir="$(dirname "$out")"
+                mkdir -p "$out_dir"
+                git diff HEAD -- "$file" "$other_file" > "$out"
+                ;;
+            
+            # Added/Modified
+            *)
+                out="${patches_dir}/${file}.diff"
+                out_dir="$(dirname "$out")"
+                mkdir -p "$out_dir"
+                git diff HEAD -- "$file" > "$out"
+                ;;
+        esac
     done
 
     git add .
